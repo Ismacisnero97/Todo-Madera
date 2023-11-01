@@ -40,6 +40,8 @@ h1{
     text-align: center;
     text-transform: capitalize;
     color: #fff;
+    margin: 0px;
+    padding: 10px;
 }
 
 .item{
@@ -91,25 +93,70 @@ h2{
 }
 
 footer {
-    padding: 5px;
+    padding: 10px;
     background-image: url(../img/fondo1.jpg);
     text-align: center;
     color: #efefef;
 }
 
+footer p{
+    margin: 0px;
+    font-size: 15px;
+    color: #fff;
+}
 
 .cuerpo{
     
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.nleft{
+    width: 100%;
+    min-height: 500px;
+    border: 5px solid #efefef;
+    border-radius: 5px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_640.jpg");
+    background-size: contain;
+    background-position: center;
+}
 
-.cuerpo p{
-    padding-left: 25px;
+.nright{
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
     text-align: center;
     font-size: 15px;
     text-shadow: 0px 0px 10px;
     color: #fff;
+}
+
+.nright p{
+    margin: 0px;
+}
+
+.nright h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.nright2{
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+    font-size: 15px;
+    text-shadow: 0px 0px 10px;
+    color: #fff;
+}
+
+.enumeracion{
+    margin: 30px;
+    text-align: left;
+    font-size: 18px;
+    color: #efefef;
+    font-weight: bolder;
 }
