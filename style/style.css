@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto+Slab:wght@200&display=swap');
+
+/* font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Roboto Slab', serif; */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar{
@@ -20,4 +31,61 @@
 .nav-link{
     padding-left: 25px;
     text-transform: capitalize;
+    font-size: 20px;
+}
+
+h2{
+    background-image: url(../img/fondo1.jpg);
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.item{
+    height: 300px;
+    border: 5px solid orange;
+}
+
+.item1{
+    background-image: url(../img/escritoriosilla.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background-image: url(../img/mesacuadrada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(../img/sillamesa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background-image: url(../img/sofa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h3{
+    font-size: 25px;
+    text-transform: capitalize
+}
+
+.textdestacado{
+    margin: 20px;
+    padding-top: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 15px black;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.9s;
+}
+
+.textdestacado:hover{
+    transform: scale(1.1);
 }
