@@ -89,3 +89,10 @@ h3{
 .textdestacado:hover{
     transform: scale(1.1);
 }
+
+footer {
+    padding: 5px;
+    background-image: url(../img/fondo1.jpg);
+    text-align: center;
+    color: #efefef;
+  }
