@@ -12,101 +12,105 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <!-- inicio navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Todo Madera 🛋️</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="fa-solid fa-bars fa-bounce"></i>
+    <header>
+        <!-- inicio navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Todo Madera 🛋️</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa-solid fa-bars fa-bounce"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- fin navbar -->
+    </header>
+    <main>
+        <!-- inicio carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mesacuadrada.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mesaparados.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mesita.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">servicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-    </nav>
-    <!-- fin navbar -->
-    <!-- inicio carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/mesacuadrada.jpg" alt="Los Angeles" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/mesaparados.jpg" alt="Chicago" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/mesita.jpg" alt="New York" class="d-block w-100">
-            </div>
-        </div>
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-    <!-- fin carrousel -->
-    <h2>destacados</h2>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="item1 item col-sm-6 col-md-6">
-                <div class="textdestacado">
-                    <h3>escritorio de estudio</h3>
-                    <h4>$10.000</h4>
-                    <p>Esta hermosa mesa cuadrada de madera maciza está disponible para darle un toque de elegancia y funcionalidad a tu hogar. Con su diseño clásico y calidad artesanal, esta mesa se adapta perfectamente a una variedad de estilos de decoración y es ideal para crear un ambiente acogedor en tu comedor o sala de estar.</p>
+        <!-- fin carrousel -->
+        <h1>destacados</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="item1 item col-sm-6 col-md-6">
+                    <div class="textdestacado">
+                        <h3>escritorio de estudio</h3>
+                        <h4>$10.000</h4>
+                        <p>Esta hermosa mesa cuadrada de madera maciza está disponible para darle un toque de elegancia y funcionalidad a tu hogar. Con su diseño clásico y calidad artesanal, esta mesa se adapta perfectamente a una variedad de estilos de decoración y es ideal para crear un ambiente acogedor en tu comedor o sala de estar.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item2 item col-sm-6 col-md-6">
-                <div class="textdestacado">
-                    <h3>mesa cuadrada</h3>
-                    <h4>$10.000</h4>
-                    <p>Si estás buscando una solución práctica y elegante para tu espacio reducido, esta mesa pequeña para dos personas es perfecta para ti. Diseñada para encajar en cocinas pequeñas, apartamentos o rincones acogedores, esta mesa ofrece la comodidad y el encanto que necesitas.</p>
+                <div class="item2 item col-sm-6 col-md-6">
+                    <div class="textdestacado">
+                        <h2>mesa cuadrada</h2>
+                        <h3>$10.000</h3>
+                        <p>Si estás buscando una solución práctica y elegante para tu espacio reducido, esta mesa pequeña para dos personas es perfecta para ti. Diseñada para encajar en cocinas pequeñas, apartamentos o rincones acogedores, esta mesa ofrece la comodidad y el encanto que necesitas.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item3 item col-sm-6 col-md-6">
-                <div class="textdestacado">
-                    <h3>mesa comedor</h3>
-                    <h4>$10.000</h4>
-                    <p>Transforma tu comedor en un espacio de elegancia y funcionalidad con esta impresionante mesa de comedor en venta. Ya sea para cenas familiares, reuniones con amigos o eventos especiales, esta mesa es el lugar perfecto para disfrutar de momentos memorables alrededor de la mesa.</p>
+                <div class="item3 item col-sm-6 col-md-6">
+                    <div class="textdestacado">
+                        <h2>mesa comedor</h2>
+                        <h3>$10.000</h3>
+                        <p>Transforma tu comedor en un espacio de elegancia y funcionalidad con esta impresionante mesa de comedor en venta. Ya sea para cenas familiares, reuniones con amigos o eventos especiales, esta mesa es el lugar perfecto para disfrutar de momentos memorables alrededor de la mesa.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item4 item col-sm-6 col-md-6">
-                <div class="textdestacado">
-                    <h3>sofa</h3>
-                    <h4>$10.000</h4>
-                    <p>Este sofá de diseño moderno es la pieza perfecta para añadir estilo y comodidad a tu sala de estar. Con su elegante estética y su acolchado suave, este sofá te brinda el lugar ideal para relajarte, recibir visitas y disfrutar de momentos inolvidables en tu hogar.</p>
+                <div class="item4 item col-sm-6 col-md-6">
+                    <div class="textdestacado">
+                        <h2>sofa</h2>
+                        <h3>$10.000</h3>
+                        <p>Este sofá de diseño moderno es la pieza perfecta para añadir estilo y comodidad a tu sala de estar. Con su elegante estética y su acolchado suave, este sofá te brinda el lugar ideal para relajarte, recibir visitas y disfrutar de momentos inolvidables en tu hogar.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer>
         <p>Copyright © 2023 Todo Madera. All Rights Reserved.</p>
     </footer>

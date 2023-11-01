@@ -34,7 +34,7 @@ font-family: 'Roboto Slab', serif; */
     font-size: 20px;
 }
 
-h2{
+h1{
     background-image: url(../img/fondo1.jpg);
     font-size: 30px;
     text-align: center;
@@ -71,7 +71,7 @@ h2{
     background-position: center;
 }
 
-h3{
+h2{
     font-size: 25px;
     text-transform: capitalize
 }
@@ -95,4 +95,21 @@ footer {
     background-image: url(../img/fondo1.jpg);
     text-align: center;
     color: #efefef;
-  }
+}
+
+
+.cuerpo{
+    
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cuerpo p{
+    padding-left: 25px;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 0px 0px 10px;
+    color: #fff;
+}
