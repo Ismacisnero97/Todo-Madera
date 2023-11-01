@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-image: url(../img/fondo1.jpg);
+}
+
+.navbar-brand{
+    font-size: 25px;
+    
+}
+
+.navbar-toggler i{
+    font-size: 30px;
+}
+
+.nav-link{
+    padding-left: 25px;
+    text-transform: capitalize;
+}
