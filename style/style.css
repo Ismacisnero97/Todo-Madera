@@ -36,12 +36,14 @@ font-family: 'Roboto Slab', serif; */
 
 h1{
     background-image: url(../img/fondo1.jpg);
+    border: 5px solid #efefef;
+    text-shadow: 0px 0px 5px black;
     font-size: 30px;
     text-align: center;
     text-transform: capitalize;
     color: #fff;
     margin: 0px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .item{
@@ -105,14 +107,45 @@ footer p{
     color: #fff;
 }
 
+.contacto{
+    
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    display: grid;
+}
+
+.rleft a{
+    font-size: 35px;
+    color: #efefef;
+    text-decoration: none;
+}
+
+.rleft{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.rright{
+    grid-template-columns: max-content;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 0px 0px 10px;
+    color: #fff;
+}
+
 .cuerpo{
     
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
     padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .nleft{
@@ -160,3 +193,5 @@ footer p{
     color: #efefef;
     font-weight: bolder;
 }
+
+
