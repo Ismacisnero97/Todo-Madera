@@ -3,38 +3,38 @@
 /* font-family: 'Edu TAS Beginner', cursive;
 font-family: 'Roboto Slab', serif; */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Edu TAS Beginner', cursive;
 }
 
-.collapse{
+.collapse {
     display: flex;
     justify-content: flex-end;
 }
 
-.navbar{
+.navbar {
     background-image: url(../img/fondo1.jpg);
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 25px;
-    
+
 }
 
-.navbar-toggler i{
+.navbar-toggler i {
     font-size: 30px;
 }
 
-.nav-link{
+.nav-link {
     padding-left: 25px;
     text-transform: capitalize;
     font-size: 20px;
 }
 
-h1{
+h1 {
     background-image: url(../img/fondo1.jpg);
     border: 5px solid #efefef;
     text-shadow: 0px 0px 5px black;
@@ -46,25 +46,25 @@ h1{
     padding: 15px;
 }
 
-.cuerpo{
-    
+.cuerpo {
+
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
     padding: 15px;
 }
 
-.item{
+.item {
     border: 5px solid orange;
     border-radius: 5px;
 }
 
-h2{
+h2 {
     font-size: 25px;
     text-transform: capitalize
 }
 
-.textdestacado{ 
+.textdestacado {
     padding: 20px;
     color: #fff;
     text-shadow: 0px 0px 15px black;
@@ -73,7 +73,7 @@ h2{
     transition: all 0.9s;
 }
 
-.textdestacado:hover{
+.textdestacado:hover {
     transform: scale(1.1);
 }
 
@@ -84,45 +84,54 @@ footer {
     color: #efefef;
 }
 
-footer p{
+footer p {
     margin: 0px;
     font-size: 15px;
     color: #fff;
 }
 
-.contacto{
-    
+.contacto {
+
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
-    padding: 15px;
-    display: grid;
+    min-height: 550px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.rleft a{
-    font-size: 35px;
+.campo {
+    width: 300px;
+}
+
+.rleft a {
+    font-size: 25px;
     color: #efefef;
     text-decoration: none;
+    text-align: center;
 }
 
-.rleft{
+.rleft {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    justify-content: center;
-    padding-top: 15px;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
 }
 
-.rright{
-    margin: 0px;
-    padding: 15px;
+.rright {
+    display: flex;
+    align-items: center;
+    padding: 30px;
     text-align: center;
     font-size: 15px;
     text-shadow: 0px 0px 10px;
     color: #fff;
 }
 
-.nleft{
+.nleft {
     width: 100%;
     min-height: 250px;
     border: 5px solid #efefef;
@@ -132,7 +141,7 @@ footer p{
     background-position: center;
 }
 
-.nright{
+.nright {
     width: 100%;
     margin: 0px;
     padding: 15px;
@@ -142,16 +151,16 @@ footer p{
     color: #fff;
 }
 
-.nright p{
+.nright p {
     margin: 0px;
 }
 
-.nright h2{
+.nright h2 {
     font-size: 35px;
     margin-bottom: 15px;
 }
 
-.nright2{
+.nright2 {
     width: 100%;
     margin: 0px;
     padding: 15px;
@@ -160,7 +169,7 @@ footer p{
     color: #fff;
 }
 
-.enumeracion{
+.enumeracion {
     margin: 30px;
     text-align: left;
     font-size: 18px;
@@ -168,7 +177,7 @@ footer p{
     font-weight: bolder;
 }
 
-.produ{
+.produ {
     border: 5px solid orange;
     padding: 20px;
     color: #fff;
@@ -178,12 +187,12 @@ footer p{
     font-size: 12px;
 }
 
-.listaproducto ul li{
+.listaproducto ul li {
     list-style-type: circle;
     text-align: justify;
 }
 
-.encargar{
+.encargar {
     background-color: rgb(149, 1, 1);
     padding: 5px;
     border-radius: 10px;
@@ -191,6 +200,7 @@ footer p{
     text-transform: capitalize;
     font-size: 24px;
 }
-  .encargar:hover{
+
+.encargar:hover {
     color: rgb(130, 47, 47);
 }
