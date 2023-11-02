@@ -46,33 +46,17 @@ h1{
     padding: 15px;
 }
 
+.cuerpo{
+    
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
 .item{
-    height: 300px;
     border: 5px solid orange;
-}
-
-.item1{
-    background-image: url(../img/escritoriosilla.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item2{
-    background-image: url(../img/mesacuadrada.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item3{
-    background-image: url(../img/sillamesa.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item4{
-    background-image: url(../img/sofa.jpg);
-    background-size: cover;
-    background-position: center;
+    border-radius: 5px;
 }
 
 h2{
@@ -80,9 +64,8 @@ h2{
     text-transform: capitalize
 }
 
-.textdestacado{
-    margin: 20px;
-    padding-top: 50px;
+.textdestacado{ 
+    padding: 20px;
     color: #fff;
     text-shadow: 0px 0px 15px black;
     text-align: center;
@@ -131,7 +114,6 @@ footer p{
 }
 
 .rright{
-    grid-template-columns: max-content;
     margin: 0px;
     padding: 15px;
     text-align: center;
@@ -140,21 +122,13 @@ footer p{
     color: #fff;
 }
 
-.cuerpo{
-    
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 15px;
-}
-
 .nleft{
     width: 100%;
-    min-height: 500px;
+    min-height: 250px;
     border: 5px solid #efefef;
     border-radius: 5px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_640.jpg");
-    background-size: contain;
+    background-image: url("https://cdn.pixabay.com/photo/2022/07/02/14/07/women-7297355_1280.jpg");
+    background-size: cover;
     background-position: center;
 }
 
@@ -194,4 +168,29 @@ footer p{
     font-weight: bolder;
 }
 
+.produ{
+    border: 5px solid orange;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 15px black;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 12px;
+}
 
+.listaproducto ul li{
+    list-style-type: circle;
+    text-align: justify;
+}
+
+.encargar{
+    background-color: rgb(149, 1, 1);
+    padding: 5px;
+    border-radius: 10px;
+    color: #efefef;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+  .encargar:hover{
+    color: rgb(130, 47, 47);
+}
