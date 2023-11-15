@@ -12,23 +12,20 @@ font-family: 'Roboto Slab', serif; */
   display: flex;
   justify-content: flex-end;
 }
+.collapse .nav-link {
+  padding-left: 25px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
 
 .navbar {
   background-image: url(../img/fondo1.jpg);
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   font-size: 25px;
 }
-
-.navbar-toggler i {
+.navbar .navbar-toggler i {
   font-size: 30px;
-}
-
-.nav-link {
-  padding-left: 25px;
-  text-transform: capitalize;
-  font-size: 20px;
 }
 
 h1 {
@@ -36,8 +33,8 @@ h1 {
   border: 5px solid #ffffff;
   text-shadow: 0px 0px 5px #000000;
   font-size: 30px;
-  text-align: center;
   text-transform: capitalize;
+  text-align: center;
   color: #ffffff;
   margin: 0px;
   padding: 15px;
@@ -67,10 +64,11 @@ h2 {
   text-align: center;
   font-size: 15px;
   transition: all 0.9s;
+  filter: grayscale(100%);
 }
-
 .textdestacado:hover {
   transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 footer {
@@ -79,7 +77,6 @@ footer {
   text-align: center;
   color: #ffffff;
 }
-
 footer p {
   margin: 0px;
   font-size: 15px;
@@ -90,7 +87,7 @@ footer p {
   background-image: url(../img/fondo.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 550px;
+  min-height: 700px;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -102,19 +99,18 @@ footer p {
   width: 300px;
 }
 
-.rleft a {
-  font-size: 25px;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-}
-
 .rleft {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   padding: 30px;
+}
+.rleft a {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
 }
 
 .rright {
@@ -146,11 +142,9 @@ footer p {
   text-shadow: 0px 0px 10px;
   color: #ffffff;
 }
-
 .nright p {
   margin: 0px;
 }
-
 .nright h2 {
   font-size: 35px;
   margin-bottom: 15px;
@@ -172,14 +166,17 @@ footer p {
   color: #ffffff;
   font-weight: bolder;
 }
+.enumeracion li {
+  font-size: 15px;
+}
 
 .produ {
   border: 5px solid #ff9f50;
   padding: 20px;
   color: #ffffff;
   text-shadow: 0px 0px 15px #000000;
-  text-align: center;
   text-transform: capitalize;
+  text-align: center;
   font-size: 10px;
 }
 
@@ -196,22 +193,27 @@ footer p {
   text-transform: capitalize;
   font-size: 25px;
 }
-
 .encargar:hover {
   color: #ff5050;
 }
 
 @media (min-width: 768px) {
-  a.navbar-brand {
+  .navbar .navbar-brand {
     font-size: 30px;
   }
-  a.nav-link {
+  .navbar .navbar-toggler i {
+    font-size: 35px;
+  }
+  .collapse .nav-link {
     font-size: 25px;
   }
   h2 {
     font-size: 30px;
   }
   .textdestacado {
+    font-size: 20px;
+  }
+  .enumeracion li {
     font-size: 20px;
   }
   .nright {

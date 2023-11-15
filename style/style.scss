@@ -20,6 +20,17 @@ $tamanio4: 25px;
 $tamanio5: 30px;
 $tamanio6: 35px;
 
+//mixins
+
+@mixin text{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@mixin grayscale {
+    filter: grayscale(100%);
+}
+
 
 * {
     margin: 0;
@@ -31,25 +42,24 @@ $tamanio6: 35px;
 .collapse {
     display: flex;
     justify-content: flex-end;
+
+    .nav-link {
+        padding-left: 25px;
+        text-transform: capitalize;
+        font-size: $tamanio3;
+    }
 }
 
 .navbar {
     background-image: url(../img/fondo1.jpg);
-}
 
-.navbar-brand {
-    font-size: $tamanio4;
+    .navbar-brand {
+        font-size: $tamanio4;
+    }
 
-}
-
-.navbar-toggler i {
-    font-size: $tamanio5;
-}
-
-.nav-link {
-    padding-left: 25px;
-    text-transform: capitalize;
-    font-size: $tamanio3;
+    .navbar-toggler i {
+        font-size: $tamanio5;
+    }
 }
 
 h1 {
@@ -57,8 +67,7 @@ h1 {
     border: 5px solid $color1;
     text-shadow: 0px 0px 5px $color2;
     font-size: $tamanio5;
-    text-align: center;
-    text-transform: capitalize;
+    @include text;
     color: $color1;
     margin: 0px;
     padding: 15px;
@@ -89,10 +98,12 @@ h2 {
     text-align: center;
     font-size: $tamanio2;
     transition: all 0.9s;
-}
+    @include grayscale;
 
-.textdestacado:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
 }
 
 footer {
@@ -100,12 +111,12 @@ footer {
     background-image: url(../img/fondo1.jpg);
     text-align: center;
     color: $color1;
-}
 
-footer p {
-    margin: 0px;
-    font-size: $tamanio2;
-    color: $color1;
+    p {
+        margin: 0px;
+        font-size: $tamanio2;
+        color: $color1;
+    }
 }
 
 .contacto {
@@ -113,7 +124,7 @@ footer p {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 550px;
+    min-height: 700px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -125,19 +136,19 @@ footer p {
     width: 300px;
 }
 
-.rleft a {
-    font-size: $tamanio4;
-    color: $color1;
-    text-decoration: none;
-    text-align: center;
-}
-
 .rleft {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     padding: 30px;
+
+    a {
+        font-size: $tamanio4;
+        color: $color1;
+        text-decoration: none;
+        text-align: center;
+    }
 }
 
 .rright {
@@ -168,15 +179,15 @@ footer p {
     font-size: $tamanio2;
     text-shadow: 0px 0px 10px;
     color: $color1;
-}
 
-.nright p {
-    margin: 0px;
-}
+    p {
+        margin: 0px;
+    }
 
-.nright h2 {
-    font-size: $tamanio6;
-    margin-bottom: 15px;
+    h2 {
+        font-size: $tamanio6;
+        margin-bottom: 15px;
+    }
 }
 
 .nright2 {
@@ -194,6 +205,10 @@ footer p {
     font-size: $tamanio3;
     color: $color1;
     font-weight: bolder;
+
+    li {
+        font-size: $tamanio2;
+    }
 }
 
 .produ {
@@ -201,8 +216,7 @@ footer p {
     padding: 20px;
     color: $color1;
     text-shadow: 0px 0px 15px $color2;
-    text-align: center;
-    text-transform: capitalize;
+    @include text;
     font-size: $tamanio1;
 }
 
@@ -218,20 +232,30 @@ footer p {
     color: $color1;
     text-transform: capitalize;
     font-size: $tamanio4;
-}
 
-.encargar:hover {
-    color: $color5;
+    &:hover {
+        color: $color5;
+    }
 }
 
 @media (min-width: 768px) {
 
-    a.navbar-brand {
-        font-size: $tamanio5;
+    .navbar {
+
+        .navbar-brand {
+            font-size: $tamanio5;
+        }
+
+        .navbar-toggler i {
+            font-size: $tamanio6;
+        }
     }
 
-    a.nav-link {
-        font-size: $tamanio4;
+    .collapse {
+
+        .nav-link {
+            font-size: $tamanio4;
+        }
     }
 
     h2 {
@@ -240,6 +264,13 @@ footer p {
 
     .textdestacado {
         font-size: $tamanio3;
+    }
+
+    .enumeracion {
+
+        li {
+            font-size: $tamanio3;
+        }
     }
 
     .nright {
@@ -254,7 +285,10 @@ footer p {
         font-size: $tamanio2;
     }
 
-    footer p {
-        font-size: $tamanio3;
+    footer {
+
+        p {
+            font-size: $tamanio3;
+        }
     }
 }
