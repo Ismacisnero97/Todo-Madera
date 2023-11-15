@@ -1,206 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto+Slab:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto+Slab:wght@200&display=swap");
 /* font-family: 'Edu TAS Beginner', cursive;
 font-family: 'Roboto Slab', serif; */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Edu TAS Beginner', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu TAS Beginner", cursive;
 }
 
 .collapse {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar {
-    background-image: url(../img/fondo1.jpg);
+  background-image: url(../img/fondo1.jpg);
 }
 
 .navbar-brand {
-    font-size: 25px;
-
+  font-size: 25px;
 }
 
 .navbar-toggler i {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .nav-link {
-    padding-left: 25px;
-    text-transform: capitalize;
-    font-size: 20px;
+  padding-left: 25px;
+  text-transform: capitalize;
+  font-size: 20px;
 }
 
 h1 {
-    background-image: url(../img/fondo1.jpg);
-    border: 5px solid #efefef;
-    text-shadow: 0px 0px 5px black;
-    font-size: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #fff;
-    margin: 0px;
-    padding: 15px;
+  background-image: url(../img/fondo1.jpg);
+  border: 5px solid #ffffff;
+  text-shadow: 0px 0px 5px #000000;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 0px;
+  padding: 15px;
 }
 
 .cuerpo {
-
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 15px;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
 }
 
 .item {
-    border: 5px solid orange;
-    border-radius: 5px;
+  border: 5px solid #ff9f50;
+  border-radius: 5px;
 }
 
 h2 {
-    font-size: 25px;
-    text-transform: capitalize
+  font-size: 25px;
+  text-transform: capitalize;
 }
 
 .textdestacado {
-    padding: 20px;
-    color: #fff;
-    text-shadow: 0px 0px 15px black;
-    text-align: center;
-    font-size: 15px;
-    transition: all 0.9s;
+  padding: 20px;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px #000000;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.9s;
 }
 
 .textdestacado:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 footer {
-    padding: 10px;
-    background-image: url(../img/fondo1.jpg);
-    text-align: center;
-    color: #efefef;
+  padding: 10px;
+  background-image: url(../img/fondo1.jpg);
+  text-align: center;
+  color: #ffffff;
 }
 
 footer p {
-    margin: 0px;
-    font-size: 15px;
-    color: #fff;
+  margin: 0px;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 .contacto {
-
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 550px;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .campo {
-    width: 300px;
+  margin: 10px;
+  width: 300px;
 }
 
 .rleft a {
-    font-size: 25px;
-    color: #efefef;
-    text-decoration: none;
-    text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
 }
 
 .rleft {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
 }
 
 .rright {
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
-    font-size: 15px;
-    text-shadow: 0px 0px 10px;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  text-shadow: 0px 0px 10px;
+  color: #ffffff;
 }
 
 .nleft {
-    width: 100%;
-    min-height: 250px;
-    border: 5px solid #efefef;
-    border-radius: 5px;
-    background-image: url("https://cdn.pixabay.com/photo/2022/07/02/14/07/women-7297355_1280.jpg");
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  min-height: 250px;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  background-image: url("https://cdn.pixabay.com/photo/2022/07/02/14/07/women-7297355_1280.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .nright {
-    width: 100%;
-    margin: 0px;
-    padding: 15px;
-    text-align: center;
-    font-size: 15px;
-    text-shadow: 0px 0px 10px;
-    color: #fff;
+  width: 100%;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  text-shadow: 0px 0px 10px;
+  color: #ffffff;
 }
 
 .nright p {
-    margin: 0px;
+  margin: 0px;
 }
 
 .nright h2 {
-    font-size: 35px;
-    margin-bottom: 15px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .nright2 {
-    width: 100%;
-    margin: 0px;
-    padding: 15px;
-    font-size: 15px;
-    text-shadow: 0px 0px 10px;
-    color: #fff;
+  width: 100%;
+  margin: 0px;
+  padding: 15px;
+  font-size: 15px;
+  text-shadow: 0px 0px 10px;
+  color: #ffffff;
 }
 
 .enumeracion {
-    margin: 30px;
-    text-align: left;
-    font-size: 18px;
-    color: #efefef;
-    font-weight: bolder;
+  margin: 30px;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bolder;
 }
 
 .produ {
-    border: 5px solid orange;
-    padding: 20px;
-    color: #fff;
-    text-shadow: 0px 0px 15px black;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 12px;
+  border: 5px solid #ff9f50;
+  padding: 20px;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px #000000;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 10px;
 }
 
 .listaproducto ul li {
-    list-style-type: circle;
-    text-align: justify;
+  list-style-type: circle;
+  text-align: justify;
 }
 
 .encargar {
-    background-color: rgb(149, 1, 1);
-    padding: 5px;
-    border-radius: 10px;
-    color: #efefef;
-    text-transform: capitalize;
-    font-size: 24px;
+  background-color: #ff0000;
+  padding: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 25px;
 }
 
 .encargar:hover {
-    color: rgb(130, 47, 47);
+  color: #ff5050;
 }
+
+@media (min-width: 768px) {
+  a.navbar-brand {
+    font-size: 30px;
+  }
+  a.nav-link {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .textdestacado {
+    font-size: 20px;
+  }
+  .nright {
+    font-size: 20px;
+  }
+  .nright2 {
+    font-size: 20px;
+  }
+  .produ {
+    font-size: 15px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
